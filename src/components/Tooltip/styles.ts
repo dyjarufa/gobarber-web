@@ -24,7 +24,7 @@ export const Container = styled.div`
 
     /* hack para criar uma flexinha no css >, v, > ,^ */
     &::before {
-      content: '';
+      content: ''; //para ser exibido em tela
       border-style: solid;
       border-color: #ff9000 transparent;
       border-width: 6px 6px 0 6px; //hack para criar um triangulo

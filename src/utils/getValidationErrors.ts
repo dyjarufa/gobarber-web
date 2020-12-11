@@ -5,7 +5,7 @@ interface Errors {
 }
 
 export default function getValidationErrors(err: ValidationError): Errors {
-  const validationError: Errors = {};
+  const validationError: Errors = {}; // inicio como vazia
 
   /* percorro o inner que é um array de erros */
   err.inner.forEach(error => {

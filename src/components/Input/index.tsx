@@ -37,7 +37,7 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
     setIsFilled(!!inputRef.current?.value);
   }, []);
 
-  // o uso do useEffect aqui é para registrar o input(useREgister) assim que o componente for montado na tela
+  // o uso do useEffect aqui é para registrar o input(useRegister) assim que o componente for montado na tela
   useEffect(() => {
     registerField({
       name: fieldName,

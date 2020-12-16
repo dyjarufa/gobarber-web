@@ -26,7 +26,8 @@
     "react",
     "@typescript-eslint",
     "react-hooks",
-    "prettier"
+    "prettier",
+    "import-helpers"
   ],
   "rules": {
     "camelcase": "off",
@@ -47,6 +48,18 @@
       {
         "ts": "never",
         "tsx": "never"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
       }
     ]
   },
